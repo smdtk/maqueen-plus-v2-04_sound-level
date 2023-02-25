@@ -6,6 +6,7 @@ basic.forever(function () {
         P = !(P)
         if (P == true) {
             DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eLeftMotor, MyEnumDir.eForward, 100)
+            DFRobotMaqueenPlusV2.controlMotor(MyEnumMotor.eRightMotor, MyEnumDir.eBackward, 100)
             DFRobotMaqueenPlusV2.controlLED(MyEnumLed.eAllLed, MyEnumSwitch.eOpen)
         } else {
             DFRobotMaqueenPlusV2.controlMotorStop(MyEnumMotor.eAllMotor)
